@@ -1,0 +1,5 @@
+env.sh
+.terraform
+.python-version
+terraform.tfstate
+terraform.tfstate*
