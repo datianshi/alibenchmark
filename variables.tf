@@ -29,5 +29,8 @@ variable "disk_size" {
 }
 
 variable "disk_count" {
-  default = "1"
+  default = "2"
+}
+variable "count" {
+  default = "2"
 }

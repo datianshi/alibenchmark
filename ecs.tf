@@ -24,7 +24,7 @@ resource "alicloud_instance" "test" {
 
   password = "${var.ecs_password}"
   key_name = "${var.key_name}"
-  count = "1"
+  count = "${var.count}"
   internet_charge_type = "PayByTraffic"
   internet_max_bandwidth_out = "${var.internet_max_bandwidth_out}"
   instance_type        = "${var.instance_type}"
@@ -49,7 +49,7 @@ resource "alicloud_disk" "disk" {
 resource "alicloud_disk_attachment" "instance-attachment" {
   count = "${var.disk_count}"
   disk_id = "${element(alicloud_disk.disk.*.id, count.index)}"
-  instance_id = "${element(alicloud_instance.test.*.id, count.index%1)}"
+  instance_id = "${element(alicloud_instance.test.*.id, count.index%var.count)}"
 }
 
 
