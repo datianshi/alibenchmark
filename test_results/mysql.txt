@@ -1,0 +1,32 @@
+5 Threads. 1 million records
+ecs.n4.small ECS -> RDS rds.mysql.t1.small within same VPC
+--------------------
+Threads started!
+Done.
+
+OLTP test statistics:
+    queries performed:
+        read:                            140000
+        write:                           50000
+        other:                           20000
+        total:                           210000
+    transactions:                        10000  (185.62 per sec.)
+    deadlocks:                           0      (0.00 per sec.)
+    read/write requests:                 190000 (3526.75 per sec.)
+    other operations:                    20000  (371.24 per sec.)
+
+Test execution summary:
+    total time:                          53.8739s
+    total number of events:              10000
+    total time taken by event execution: 269.2929
+    per-request statistics:
+         min:                                 12.53ms
+         avg:                                 26.93ms
+         max:                                102.00ms
+         approx.  95 percentile:              44.00ms
+
+Threads fairness:
+    events (avg/stddev):           2000.0000/21.48
+    execution time (avg/stddev):   53.8586/0.01
+
+sysbench 0.4.12:  multi-threaded system evaluation benchmark

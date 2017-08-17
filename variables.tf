@@ -29,8 +29,41 @@ variable "disk_size" {
 }
 
 variable "disk_count" {
-  default = "2"
+  default = "1"
 }
 variable "count" {
-  default = "2"
+  default = "1"
+}
+
+
+# For RDS
+
+variable "engine" {
+  default = "MySQL"
+}
+variable "engine_version" {
+  default = "5.6"
+}
+variable "instance_class" {
+  default = "rds.mysql.t1.small"
+}
+variable "storage" {
+  default = "10"
+}
+variable "net_type" {
+  default = "Intranet"
+}
+
+variable "rds_user_name" {
+  default = "tf_tester"
+}
+variable "rds_password" {
+  default = "Test12345"
+}
+
+variable "database_name" {
+  default = "sdingtest"
+}
+variable "database_character" {
+  default = "utf8"
 }
