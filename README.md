@@ -67,11 +67,13 @@ ssh -i [private_key] root@public_ip
 
   A sample spring boot app that uses multiple database resources to serve albums storage
 
+* ```terraform apply```
 * SLB works as the load balancer with port 80 -> ECS 8080
 * Two ECS instances run spring music app with port 8080
 * One Mysql RDS to store apps' albums
 * The packaged jar is stored in Object Storage Service. It will be pulled to the ECS VMS during start up/creation
 * To deploy the app to multiple instances ```./deploy_app.sh [PRIVATE_KEY]``` [deploy_app.sh](deploy_app.sh)
+* The website should be reachable from SLB IP http://{SLB_IP}
 
 
 ## Tear Down resources
