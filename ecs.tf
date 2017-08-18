@@ -25,11 +25,11 @@ resource "alicloud_disk" "disk" {
   availability_zone = "${alicloud_instance.test.0.availability_zone}"
   category = "${var.disk_category}"
   size = "${var.disk_size}"
-  count = "1"
+  count = "${var.count}"
 }
 
 resource "alicloud_disk_attachment" "instance-attachment" {
-  count = "${var.disk_count}"
+  count = "${var.count}"
   disk_id = "${element(alicloud_disk.disk.*.id, count.index)}"
   instance_id = "${element(alicloud_instance.test.*.id, count.index%var.count)}"
 }

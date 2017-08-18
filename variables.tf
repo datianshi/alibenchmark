@@ -13,9 +13,7 @@ variable "image" {
 variable "instance_type" {
   default = "ecs.n4.small"
 }
-variable "ecs_password" {
-  default = "Test12345"
-}
+variable "ecs_password" {}
 variable "internet_max_bandwidth_out" {
   default = "2"
 }
