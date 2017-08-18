@@ -14,7 +14,7 @@
 4. create an env.sh to based on [env_template.sh](env_template.sh)
 5. ```source env.sh```
 6. Install terraform and [alibaba cloud terraform provider](https://github.com/alibaba/terraform-provider)
-7. ```terraform plan``` to review the resources created
+7. ```terraform plan``` to review the resources plan
 8. ```terraform apply``` to create the resources:
 
   * 1 Load Balancer
@@ -37,7 +37,7 @@ ssh -i [private_key] root@public_ip
 
    * CPU - [report](test_results/cpuresult.txt)
 
-    ```phoronix-test-suite benchmark c-ray```
+     ```phoronix-test-suite benchmark c-ray```
 
    * Disk - [report](test_results/disktest.txt)
 
