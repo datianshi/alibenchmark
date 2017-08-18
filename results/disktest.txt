@@ -1,0 +1,147 @@
+disktest
+KVM testing on Ubuntu 16.04 via the Phoronix Test Suite.
+
+
+disktest-1:
+
+	Processor: Intel Xeon E5-2682 v4 @ 2.49GHz (1 Core), Motherboard: Alibaba Cloud ECS, Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 2048 MB RAM, Disk: 40GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Ubuntu 16.04, Kernel: 4.4.0-85-generic (x86_64), Compiler: GCC 5.4.0 20160609, File-System: ext4, Screen Resolution: 1024x768, System Layer: KVM
+
+disktest-2:
+
+	Processor: Intel Xeon E5-2682 v4 @ 2.49GHz (1 Core), Motherboard: Alibaba Cloud ECS, Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 2048 MB RAM, Disk: 40GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Ubuntu 16.04, Kernel: 4.4.0-85-generic (x86_64), Compiler: GCC 5.4.0 20160609, File-System: ext4, Screen Resolution: 1024x768, System Layer: KVM
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: Sync - Buffered: No - Direct: Yes - Block Size: 1MB - Disk Target: Default Test Directory
+  MB/s
+    disktest-1 .. 54.52 |========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: Sync - Buffered: No - Direct: Yes - Block Size: 1MB - Disk Target: Default Test Directory
+  IOPS
+    disktest-1 .. 53 |===========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: Sync - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-1 .. 4.96 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: Sync - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-1 .. 1239 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: Libaio - Buffered: No - Direct: Yes - Block Size: 1MB - Disk Target: Default Test Directory
+  MB/s
+    disktest-1 .. 55.23 |========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: Libaio - Buffered: No - Direct: Yes - Block Size: 1MB - Disk Target: Default Test Directory
+  IOPS
+    disktest-1 .. 51 |===========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: Libaio - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-1 .. 18.11 |========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: Libaio - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-1 .. 4524 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 1MB - Disk Target: Default Test Directory
+  MB/s
+    disktest-1 .. 56.23 |========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 1MB - Disk Target: Default Test Directory
+  IOPS
+    disktest-1 .. 51 |===========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-1 .. 4.96 |=========================================================================================================
+    disktest-2 .. 4.96 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-1 .. 1236 |=========================================================================================================
+    disktest-2 .. 1238 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Random Read - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-2 .. 4.98 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Random Read - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-2 .. 1240 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Random Read - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-2 .. 55.15 |========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Random Read - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-2 .. 858 |==========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Random Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-2 .. 4.96 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Random Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-2 .. 1237 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Random Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-2 .. 50.19 |========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Random Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-2 .. 781 |==========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Read - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-2 .. 4.98 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Read - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-2 .. 1241 |=========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Read - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-2 .. 55.45 |========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Read - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-2 .. 863 |==========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory
+  MB/s
+    disktest-2 .. 50.67 |========================================================================================================
+
+Flexible IO Tester 2.1.13
+Type: Sequential Write - IO Engine: POSIX AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory
+  IOPS
+    disktest-2 .. 788 |==========================================================================================================

@@ -1,0 +1,12 @@
+This test is multi-threaded (16 threads per core), will shoot 8 rays per pixel for anti-aliasing, and will generate a 1600 x 1200 image
+
+cputest-1:
+
+	Processor: Intel Xeon E5-2682 v4 @ 2.49GHz (1 Core), Motherboard: Alibaba Cloud ECS, Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 2048 MB RAM, Disk: 40GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Ubuntu 16.04, Kernel: 4.4.0-85-generic (x86_64), Compiler: GCC 5.4.0 20160609, File-System: ext4, Screen Resolution: 1024x768, System Layer: KVM
+
+C-Ray 1.1
+Total Time
+  Seconds
+    cputest-1 .. 139.51 |========================================================================================================
